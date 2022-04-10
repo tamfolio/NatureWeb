@@ -13,7 +13,7 @@ function Header() {
           <span className="sub-primary">Is where Life Happens</span>
         </h1>
 
-        <a href="/" className='btn btn-white'>Discover Our Tour</a>
+        <a href="/" className='btn btn-white btn-animated'>Discover Our Tour</a>
     </div>
         
     </header>

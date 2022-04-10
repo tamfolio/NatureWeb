@@ -84,6 +84,20 @@
     }
 }
 
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
 .btn:link,
 .btn:visited {
     text-transform: uppercase;
@@ -94,6 +108,14 @@
     transition: all .2s;
     font-family: 'Lato' sans-serif;
     position: relative;
+}
+
+.btn-animated {
+    animation-name: moveUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.75s;
+    animation-fill-mode: backwards;
 }
 
 .btn:hover {
@@ -128,5 +150,6 @@
 }
 
 .btn:hover::after {
-    transform: scale(1.5);
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
 }
